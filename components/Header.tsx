@@ -24,8 +24,8 @@ export const Header: React.FC<HeaderProps> = ({ profile }) => {
   return (
     <div className="flex flex-col items-center text-center">
       <div className="relative group cursor-pointer">
-        {/* Animated Glow behind Avatar */}
-        <div className="absolute -inset-1 bg-gradient-to-tr from-fuchsia-600 via-purple-600 to-cyan-600 rounded-full opacity-70 group-hover:opacity-100 blur-md group-hover:blur-lg transition-all duration-500 animate-spin-slow"></div>
+        {/* Animated Glow behind Avatar - Static now for less distraction */}
+        <div className="absolute -inset-1 bg-gradient-to-tr from-fuchsia-600 via-purple-600 to-cyan-600 rounded-full opacity-60 group-hover:opacity-100 blur-md group-hover:blur-lg transition-all duration-500"></div>
         
         <img
           src={profile.avatarUrl}

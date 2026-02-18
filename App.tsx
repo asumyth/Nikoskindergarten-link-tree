@@ -9,17 +9,15 @@ const App: React.FC = () => {
     <div className="min-h-screen w-full relative overflow-hidden bg-black selection:bg-fuchsia-500 selection:text-white">
       {/* Psychedelic Background */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-        {/* Rotating gradient base */}
-        <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] opacity-5 animate-spin-slow"></div>
         
-        {/* Vibrant Orbs */}
-        <div className="absolute top-[10%] left-[20%] w-[500px] h-[500px] bg-purple-600 rounded-full mix-blend-color-dodge filter blur-[100px] opacity-40 animate-blob"></div>
-        <div className="absolute top-[40%] right-[20%] w-[400px] h-[400px] bg-cyan-500 rounded-full mix-blend-color-dodge filter blur-[100px] opacity-40 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-[10%] left-[30%] w-[600px] h-[600px] bg-fuchsia-700 rounded-full mix-blend-color-dodge filter blur-[120px] opacity-40 animate-blob animation-delay-4000"></div>
-        <div className="absolute top-[50%] left-[-10%] w-[300px] h-[300px] bg-indigo-600 rounded-full mix-blend-color-dodge filter blur-[80px] opacity-30 animate-pulse-slow"></div>
+        {/* Vibrant Orbs - Subtle movement */}
+        <div className="absolute top-[10%] left-[20%] w-[500px] h-[500px] bg-purple-600 rounded-full mix-blend-color-dodge filter blur-[100px] opacity-30 animate-blob"></div>
+        <div className="absolute top-[40%] right-[20%] w-[400px] h-[400px] bg-cyan-500 rounded-full mix-blend-color-dodge filter blur-[100px] opacity-30 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-[10%] left-[30%] w-[600px] h-[600px] bg-fuchsia-700 rounded-full mix-blend-color-dodge filter blur-[120px] opacity-30 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-[50%] left-[-10%] w-[300px] h-[300px] bg-indigo-600 rounded-full mix-blend-color-dodge filter blur-[80px] opacity-20 animate-pulse-slow"></div>
 
-        {/* Grid Overlay */}
-        <div className="absolute inset-0 psychedelic-grid opacity-30"></div>
+        {/* Grid Overlay - Reduced opacity */}
+        <div className="absolute inset-0 psychedelic-grid opacity-10"></div>
       </div>
 
       {/* Content Container */}
